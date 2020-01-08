@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ProfileActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:background="@color/backgroundlogin"
+            >
+
+            <ImageView
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/fblogo"
+                android:id="@+id/fblogoing"
+                android:layout_width="50dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:id="@+id/dashboardtopname"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="View Profile"
+                android:textSize="30dp"
+                android:textColor="@color/colorWhite"
+                />
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivUserImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/noimage" />
+
+
+        <TextView
+            android:id="@+id/displayname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingLeft="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/email"/>
+                <EditText
+                    android:id="@+id/displayemail"
+                    android:textStyle="italic"
+                    android:layout_gravity="center_vertical"
+                    android:hint="N/A"
+                    android:textSize="22sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:background="@android:color/transparent"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingLeft="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/gender"/>
+                <TextView
+                    android:id="@+id/displaygender"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textSize="22sp"
+                    android:textColor="@color/colorBlack"
+                    android:background="@android:color/transparent"
+                    android:hint="N/A"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingLeft="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/birthday"/>
+                <TextView
+                    android:id="@+id/displaydob"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:paddingLeft="20dp"
+                    android:textSize="22sp"
+                    android:background="@android:color/transparent"
+                    android:hint="N/A"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnback"
+                android:layout_width="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/loginbuttondesign"
+                android:text="Back"
+                android:textSize="20dp"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+<!--            <Button-->
+<!--                android:id="@+id/btnlogout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@drawable/logoutbutton_design"-->
+<!--                android:text="Log out"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                />-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

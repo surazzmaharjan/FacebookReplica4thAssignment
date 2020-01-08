@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECEFF6"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:background="@color/backgroundlogin"
+        >
+
+        <ImageView
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/fblogo"
+            android:id="@+id/fblogoing"
+            android:layout_width="50dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/dashboardtopname"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="145dp"
+            android:layout_height="40dp"
+            android:text="NewsFeed"
+            android:textSize="30dp"
+            android:textColor="@color/colorWhite"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/noimage"
+            android:id="@+id/imgProgileImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvfbtimeline"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>
+
